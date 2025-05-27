@@ -2,7 +2,7 @@ using Projexor.Domain.ExceptionExtension;
 
 namespace Projexor.Domain.ValueObjects;
 
-public class Name : ValueObjects
+public class Name : ValueObject
 {
     private string Value { get; }
 

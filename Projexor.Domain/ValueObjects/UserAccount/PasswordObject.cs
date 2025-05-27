@@ -1,6 +1,6 @@
 namespace Projexor.Domain.ValueObjects;
 
-public class ValueObject
+public class Password : ValueObject
 {
 
 }
