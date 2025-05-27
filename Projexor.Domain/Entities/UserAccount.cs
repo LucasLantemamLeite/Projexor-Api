@@ -9,12 +9,14 @@ public class UserAccount : Entity
     public Login Login { get; private set; }
     public Password PasswordHash { get; private set; }
     public Email Email { get; private set; }
+    public PhoneNumber PhoneNumber { get; private set; }
 
-    public UserAccount(string name, string login, string password, string email)
+    public UserAccount(string name, string login, string password, string email, string phone_number)
     {
         Name = new Name(name);
         Login = new Login(login);
         PasswordHash = new Password(password);
         Email = new Email(email);
+        PhoneNumber = new PhoneNumber(phone_number);
     }
 }
