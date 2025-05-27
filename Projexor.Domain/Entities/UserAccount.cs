@@ -11,6 +11,7 @@ public class UserAccount : Entity
     public Email Email { get; private set; }
     public PhoneNumber PhoneNumber { get; private set; }
     public BirthDate BirthDate { get; private set; }
+    public DateTime CreatAt { get; private set; } = DateTime.UtcNow;
 
     public UserAccount(string name, string login, string password, string email, string phone_number, DateTime date)
     {
