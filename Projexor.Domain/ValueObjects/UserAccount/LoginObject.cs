@@ -1,0 +1,14 @@
+using Projexor.Domain.ExceptionExtension;
+
+namespace Projexor.Domain.ValueObjects;
+
+public class Login : ValueObjects
+{
+    private string Value { get; }
+
+    public Login(string login)
+    {
+        DomainException.ThrowIfError(string.IsNullOrWhiteSpace(login), "Login não pode ser Vazio ou Nulo.");
+        Value = login;
+    }
+}
