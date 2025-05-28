@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projexor.Domain", "Projexor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projexor.Test", "Projexor.Test\Projexor.Test.csproj", "{27FED8AD-6231-4F46-9DE6-9181005441CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projexor.Infrastructure", "Projexor.Infrastructure\Projexor.Infrastructure.csproj", "{9C6771CC-59BA-4DEA-8426-762653CD08CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{27FED8AD-6231-4F46-9DE6-9181005441CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27FED8AD-6231-4F46-9DE6-9181005441CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27FED8AD-6231-4F46-9DE6-9181005441CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6771CC-59BA-4DEA-8426-762653CD08CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6771CC-59BA-4DEA-8426-762653CD08CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6771CC-59BA-4DEA-8426-762653CD08CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6771CC-59BA-4DEA-8426-762653CD08CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
