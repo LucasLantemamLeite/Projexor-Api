@@ -6,6 +6,8 @@ public class BirthDate : ValueObject
 {
     public DateTime Value { get; }
 
+    public BirthDate() { }
+
     public BirthDate(DateTime date)
     {
         BirthDateException.ThrowIfError(date, "Birth Date não pode ser uma data futura.");

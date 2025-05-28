@@ -6,6 +6,8 @@ public class Password : ValueObject
 {
     public string Value { get; set; } = null!;
 
+    public Password() { }
+
     public Password(string password)
     {
         DomainException.ThrowIfError(string.IsNullOrWhiteSpace(password), "Password não pode ser Vazio.");

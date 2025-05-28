@@ -4,6 +4,8 @@ public class Active : ValueObject
 {
     public bool Value { get; } = true;
 
+    public Active() { }
+
     public Active(bool active)
     {
         Value = active;

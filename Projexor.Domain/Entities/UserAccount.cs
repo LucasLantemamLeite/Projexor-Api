@@ -14,6 +14,8 @@ public class UserAccount : Entity
     public DateTime CreatAt { get; private set; } = DateTime.UtcNow;
     public Active Active { get; private set; }
 
+    public UserAccount() { }
+
     public UserAccount(string name, string login, string password, string email, string phone_number, DateTime date)
     {
         Name = new Name(name);

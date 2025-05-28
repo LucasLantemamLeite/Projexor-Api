@@ -7,6 +7,8 @@ public class PhoneNumber : ValueObject
 {
     public string Value { get; } = null!;
 
+    public PhoneNumber() { }
+
     public PhoneNumber(string phone_number)
     {
         var phoneNumberFormat = PhoneNumberException.ThrowIfNotMatch(phone_number, "`Phone Number Inválido.");
