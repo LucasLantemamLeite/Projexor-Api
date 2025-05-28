@@ -4,7 +4,7 @@ namespace Projexor.Domain.ValueObjects;
 
 public class Email : ValueObject
 {
-    private string Value { get; } = null!;
+    public string Value { get; } = null!;
 
     public Email(string email)
     {

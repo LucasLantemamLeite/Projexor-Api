@@ -5,7 +5,7 @@ namespace Projexor.Domain.ValueObjects;
 
 public class PhoneNumber : ValueObject
 {
-    private string Value { get; } = null!;
+    public string Value { get; } = null!;
 
     public PhoneNumber(string phone_number)
     {

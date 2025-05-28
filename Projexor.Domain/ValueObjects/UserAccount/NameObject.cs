@@ -4,7 +4,7 @@ namespace Projexor.Domain.ValueObjects;
 
 public class Name : ValueObject
 {
-    private string Value { get; } = null!;
+    public string Value { get; } = null!;
 
     public Name(string name)
     {

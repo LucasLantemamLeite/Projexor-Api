@@ -4,7 +4,7 @@ namespace Projexor.Domain.ValueObjects;
 
 public class BirthDate : ValueObject
 {
-    private DateTime Value { get; }
+    public DateTime Value { get; }
 
     public BirthDate(DateTime date)
     {
