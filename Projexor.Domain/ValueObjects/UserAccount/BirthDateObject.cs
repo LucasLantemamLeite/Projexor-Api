@@ -8,7 +8,7 @@ public class BirthDate : ValueObject
 
     public BirthDate(DateTime date)
     {
-        BirthDateException.ThrowIfError(date, "BirthDate não pode ser uma data futura.");
+        BirthDateException.ThrowIfError(date, "Birth Date não pode ser uma data futura.");
         Value = date;
     }
 }

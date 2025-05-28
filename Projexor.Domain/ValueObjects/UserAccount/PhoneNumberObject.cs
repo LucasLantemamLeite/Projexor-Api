@@ -5,11 +5,11 @@ namespace Projexor.Domain.ValueObjects;
 
 public class PhoneNumber : ValueObject
 {
-    private string Value { get; }
+    private string Value { get; } = null!;
 
     public PhoneNumber(string phone_number)
     {
-        DomainException.ThrowIfError(!Regex.IsMatch(@"^\+\d{8,15}$", phone_number), "Phone Number não é válido.");
-        Value = phone_number;
+        var phoneNumberFormat = PhoneNumberException.ThrowIfNotMatch(phone_number, "`Phone Number Inválido.");
+        Value = phoneNumberFormat;
     }
 }

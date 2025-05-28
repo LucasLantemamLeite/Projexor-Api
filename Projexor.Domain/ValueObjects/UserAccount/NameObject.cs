@@ -4,11 +4,11 @@ namespace Projexor.Domain.ValueObjects;
 
 public class Name : ValueObject
 {
-    private string Value { get; }
+    private string Value { get; } = null!;
 
     public Name(string name)
     {
-        DomainException.ThrowIfError(string.IsNullOrEmpty(name), "Name não pode ser Vazio ou Nulo.");
+        DomainException.ThrowIfError(string.IsNullOrEmpty(name), "Name não pode ser Vazio.");
         Value = name;
     }
 }
