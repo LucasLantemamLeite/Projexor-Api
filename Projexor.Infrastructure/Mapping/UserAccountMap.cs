@@ -73,11 +73,6 @@ public class UserAccountMap : IEntityTypeConfiguration<UserAccount>
             .IsRequired();
         });
 
-        builder.Property(x => x.CreatAt)
-        .HasColumnType("CreatAt")
-        .HasColumnType("SmallDateTime")
-        .IsRequired();
-
         builder.OwnsOne(x => x.Active, a =>
         {
             a.Property(x => x.Value)
@@ -85,6 +80,11 @@ public class UserAccountMap : IEntityTypeConfiguration<UserAccount>
             .HasColumnType("Bit")
             .IsRequired();
         });
+
+        builder.Property(x => x.CreatAt)
+        .HasColumnName("CreatAt")
+        .HasColumnType("SmallDateTime")
+        .IsRequired();
 
     }
 }

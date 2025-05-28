@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Projexor.Data.Mapping;
 using Projexor.Domain.Entity;
 
 namespace Projexor.Data.Context;
@@ -11,6 +12,7 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserAccount).Assembly);
+
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserAccountMap).Assembly);
     }
 }

@@ -24,5 +24,6 @@ public class UserAccount : Entity
         Email = new Email(email);
         PhoneNumber = new PhoneNumber(phone_number);
         BirthDate = new BirthDate(date);
+        Active = new Active();
     }
 }
